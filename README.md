@@ -22,16 +22,6 @@ See our issue tracker at
 The following sections illustrate how to use the `vscode-daps` extension to run
 DAPS commands.
 
-## Making it quicker with options
-
-If you work on a project and use the same DC file, target format, or root ID
-over and over, you can specify this information in the `.vscode/settings.json`
-file of your project. After you save the modified `.vscode/settings.json` file,
-you will not be asked by VSCode to specify the included options when running the
-commands described below.
-
-<img src="./media/daps-options.gif" width="800px"/>
-
 ## Formatting an XML document
 
 To format the currently opened active XML document, right-click its tab and
@@ -119,11 +109,27 @@ structure.
 
 <img src="./media/doc-structure-treeview.png" width="480px"/>
 
+## XML emtity autocompletion
+
+Start typing `&` and VSCode tries to find the right entity as you type. You can specify
+which entity files to exclude. By default, all referenced entity files are included.
+
 ## CodeLens support
 
 With the DocBook assembly XML (`*.asm.xml`) open, you can navigate to referenced
 files directly from the assembly `<strucure/>`.
 
 <img src="./media/codelens-asm.png" width="800px"/>
+
+## Making it quicker with options
+
+If you work on a project and use the same DC file, target format, or root ID
+over and over, you can specify this information in the `.vscode/settings.json`
+file of your project. After you save the modified `.vscode/settings.json` file,
+you will not be asked by VSCode to specify the included options when running the
+commands described below.
+
+<img src="./media/daps-options.gif" width="800px"/>
+
 
 
